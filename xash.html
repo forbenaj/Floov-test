@@ -362,7 +362,8 @@
 			Module.arguments = document.getElementById('iArgs').value.split(' ');
 			Module.run = run = savedRun;
 			if( radioChecked('Zip') )
-				fetchZIP(zipMods.length>1?document.getElementById('selectZip').value:zipMods[0][0], savedRun);
+				fetchZIP("benaj.zip", savedRun);
+				//fetchZIP(zipMods.length>1?document.getElementById('selectZip').value:zipMods[0][0], savedRun);
 			else if( (!zipMods.length && !pkgMods.length) || radioChecked('LocalZip') )
 			{
 			var reader = new FileReader();
